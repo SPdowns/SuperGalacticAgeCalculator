@@ -65,4 +65,9 @@ describe('Person class', () => {
     reusablePerson.jupiterAge();
     expect (reusablePerson.age).toEqual(1.52)
   })
+  test("should return a jupiter life expectency if age is less than expectency", () => {
+    reusablePerson.jupiterAge();
+    reusablePerson.lifeExpectencyCalc();
+    expect (reusablePerson.lifeExpectency).toEqual()
+  })
 });
