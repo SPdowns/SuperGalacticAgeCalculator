@@ -25,4 +25,12 @@ export class Person {
       return this.lifeExpectency
     }
   }
+
+  venusAge() {
+    this.age *= 365;
+    this.age /= 225;
+    let venusAge = Math.round(this.age)
+    this.age = venusAge;
+    return this.age
+  }
 }
