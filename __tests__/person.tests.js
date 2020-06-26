@@ -1,9 +1,11 @@
 import {Person} from "./../src/person";
   let reusablePerson;
+  let reusablePerson2;
 
 describe('Person class', () => {
   beforeEach(() => {
     reusablePerson = new Person("Sean", 18);
+    reusablePerson2 = new Person("Old Sean", 50)
   });
 
   test("should create a new person object", () => {
@@ -20,12 +22,13 @@ describe('Person class', () => {
     reusablePerson.mercuryLifeExpectency();
     expect (reusablePerson.lifeExpectency).toEqual(5);
   });
+});
+
+describe('Person class', () => {
   
   test("should be able to return a life expectency value if age is more then expectency", () => {
-    const person2 = new Person ({name: "Sean", age: 50, lifeExpectency: 80})
-    person2.mercuryAge();
-    person2.mercuryLifeExpectency();
-    expect (person2.lifeExpectency).toEqual(127);
+    reusablePerson2.mercuryAge();
+    reusablePerson2.mercuryLifeExpectency();
+    expect (reusablePerson2.lifeExpectency).toEqual(127);
   });
-
 });

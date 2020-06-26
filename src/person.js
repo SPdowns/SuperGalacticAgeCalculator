@@ -19,6 +19,10 @@ export class Person {
     if (this.age < this.lifeExpectency) {
       this.lifeExpectency -= this.age;
       return this.lifeExpectency
+    } else {
+      let mercuryLifeExpectency = this.age -= this.lifeExpectency;
+      this.lifeExpectency = mercuryLifeExpectency;
+      return this.lifeExpectency
     }
   }
 }
