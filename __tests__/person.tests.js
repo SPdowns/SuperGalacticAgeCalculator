@@ -26,7 +26,7 @@ describe('Person class', () => {
   test("should be able to return a life expectency value if age is more then expectency", () => {
     reusablePerson2.mercuryAge();
     reusablePerson2.lifeExpectencyCalc();
-    expect (reusablePerson2.lifeExpectency).toEqual(127);
+    expect (reusablePerson2.lifeExpectency).toEqual(231);
   });
 
   test("should convert earth age to venus age", () => {
@@ -43,6 +43,6 @@ describe('Person class', () => {
   test("should return a venus life expectency if age is more than expectency", () => {
     reusablePerson2.venusAge();
     reusablePerson2.lifeExpectencyCalc();
-    expect (reusablePerson2.lifeExpectency).toEqual()
+    expect (reusablePerson2.lifeExpectency).toEqual(42)
   })
 });
