@@ -21,9 +21,9 @@ export class Person {
 
   mercuryAge() {
     this.days /= 88;
-    let mercuryAge = this.days.toFixed(2)
+    let mercuryAge = this.days.toFixed(0)
     this.age = parseFloat(mercuryAge);
-    console.log(this.age)
+    
   }
 
   venusAge() {
