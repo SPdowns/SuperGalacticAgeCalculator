@@ -12,6 +12,10 @@ describe('Person class', () => {
     expect (reusablePerson).toMatchObject({name: "Sean", age: 18})
   });
 
+  test("should convert this.age to the amount of days", () => {
+    expect(reusablePerson.days).toEqual(6570)
+  })
+
   test("should convert earth age to mercury age", () => {
     reusablePerson.mercuryAge();
     expect (reusablePerson.age).toEqual(75);
@@ -42,7 +46,10 @@ describe('Person class', () => {
 
   test("should return a venus life expectency if age is more than expectency", () => {
     reusablePerson2.venusAge();
+    console.log(reusablePerson2)
     reusablePerson2.lifeExpectencyCalc();
     expect (reusablePerson2.lifeExpectency).toEqual(42)
   })
+
+
 });

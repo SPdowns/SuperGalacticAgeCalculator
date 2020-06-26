@@ -4,6 +4,7 @@ export class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
+    this.days = 
     this.lifeExpectency = 80
   }
 
@@ -19,18 +20,18 @@ export class Person {
   }
 
   mercuryAge() {
-    this.age *= 365;
-    this.age /= 88;
-    let mercuryAge = Math.round(this.age)
+    this.days /= 88;
+    let mercuryAge = Math.round(this.days)
     this.age = mercuryAge;
     return this.age
   }
 
   venusAge() {
-    this.age *= 365;
-    this.age /= 225;
-    let venusAge = Math.round(this.age)
+    this.days /= 225;
+    let venusAge = Math.round(this.days)
     this.age = venusAge;
     return this.age
   }
+
+
 }
