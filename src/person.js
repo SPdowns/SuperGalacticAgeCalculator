@@ -11,6 +11,7 @@ export class Person {
   lifeExpectencyCalc() {
     if (this.age < this.lifeExpectency) {
       this.lifeExpectency -= this.age;
+      return this.lifeExpectency;
     } else {
       let tempLifeExpectency = this.age -= this.lifeExpectency;
       this.lifeExpectency = tempLifeExpectency;
@@ -19,7 +20,7 @@ export class Person {
 
   mercuryAge() {
     this.days /= 88;
-    let mercuryAge = this.days.toFixed(0);
+    let mercuryAge = this.days.toFixed(2);
     this.age = parseFloat(mercuryAge);
     
   }
