@@ -20,6 +20,12 @@ describe('Person class', () => {
     reusablePerson.mercuryLifeExpectency();
     expect (reusablePerson.lifeExpectency).toEqual(5);
   });
-
+  
+  test("should be able to return a life expectency value if age is more then expectency", () => {
+    const person2 = new Person ({name: "Sean", age: 50, lifeExpectency: 80})
+    person2.mercuryAge();
+    person2.mercuryLifeExpectency();
+    expect (person2.lifeExpectency).toEqual(127);
+  });
 
 });

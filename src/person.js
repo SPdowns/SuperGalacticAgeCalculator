@@ -19,5 +19,6 @@ export class Person {
     if (this.age < this.lifeExpectency) {
       this.lifeExpectency -= this.age;
       return this.lifeExpectency
+    }
   }
 }
