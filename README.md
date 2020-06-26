@@ -61,7 +61,3 @@ Open via Bash/GitBash:
 
 ## License
 This software is licensed under the MIT license. Copyright (c) 2020 **_Sean Downs_**
-
-**Behavior**: 
-  * Input: 
-  * Output: 
