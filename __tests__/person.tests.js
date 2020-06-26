@@ -22,9 +22,6 @@ describe('Person class', () => {
     reusablePerson.mercuryLifeExpectency();
     expect (reusablePerson.lifeExpectency).toEqual(5);
   });
-});
-
-describe('Person class', () => {
   
   test("should be able to return a life expectency value if age is more then expectency", () => {
     reusablePerson2.mercuryAge();
