@@ -12,6 +12,6 @@ describe('Person class', () => {
 
   test("should convert earth age to mercury age", () => {
     reusablePerson.mercuryAge();
-    expect (mercuryAge).toEqual(75)
+    expect (reusablePerson.age).toEqual(75)
   });
 });

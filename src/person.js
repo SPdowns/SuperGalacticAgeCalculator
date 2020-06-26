@@ -10,7 +10,7 @@ export class Person {
     this.age *= 365;
     this.age /= 88;
     let mercuryAge = Math.round(this.age)
-    console.log(this.)
-    return mercuryAge
+    this.age = mercuryAge;
+    return this.age
   }
 }
