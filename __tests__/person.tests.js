@@ -86,6 +86,6 @@ describe('Person class', () => {
   test("should return a uranus life expectency", () => {
     reusablePerson.uranusAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.lifeExpectency).toEqual()
+    expect (reusablePerson.lifeExpectency).toEqual(79.79)
   });
 });
