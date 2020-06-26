@@ -29,4 +29,9 @@ export class Person {
     this.age = venusAge;
   }
 
+  marsAge() {
+    this.days /= 687;
+    let marsAge = Math.round(this.days)
+    this.age = marsAge;
+  }
 }

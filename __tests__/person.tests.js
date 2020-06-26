@@ -50,10 +50,9 @@ describe('Person class', () => {
     expect (reusablePerson2.lifeExpectency).toEqual(42)
   })
 
-  test("should convert earth age to venus age", () => {
+  test("should convert earth age to mars age", () => {
     reusablePerson.marsAge();
     expect (reusablePerson.age).toEqual(10)
   })
-
 
 });
