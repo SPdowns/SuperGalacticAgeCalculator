@@ -1,14 +1,16 @@
-# Title
+# Super Galactic Age Calculator
 
-#### Title, date 0000.00.00
+#### Super Galactic Age Calculator, 2020/06/26
 
 #### _By Sean Downs_
 ## Description
+This is an application that determines a user’s age based on a planet’s solar years.
 
 ## Specifications
-**Behavior 1**: 
-  * Input: 
-  * Output: 
+
+**Behavior 1**: This will create a person object with a name and date of birth
+  * Input: Name: Sean; DOB: 06/26/2001
+  * Output: Person1 = Name: Sean; DOB: 06/26/2001
 
 
 ## Known Bugs
@@ -31,7 +33,7 @@ Open index.html in Chrome or preferred browser: open index.html
 * Visual Studio Code (code editor)
 * HTML
 * CSS
-* Bootstrap-3.3.7
+* Bootstrap-4.5.0
 * JavaScript
 * jQuery-3.5.1
 
