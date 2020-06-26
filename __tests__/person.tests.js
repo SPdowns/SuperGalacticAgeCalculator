@@ -88,4 +88,8 @@ describe('Person class', () => {
     reusablePerson.lifeExpectencyCalc();
     expect (reusablePerson.lifeExpectency).toEqual(79.79)
   });
+  test("should convert earth age to neptune", () => {
+    reusablePerson.neptuneAge();
+    expect (reusablePerson.age).toEqual(0.11)
+  });
 });
