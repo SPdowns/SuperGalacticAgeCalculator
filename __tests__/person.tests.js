@@ -95,6 +95,6 @@ describe('Person class', () => {
   test("should return a neptune life expectency", () => {
     reusablePerson.neptuneAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.lifeExpectency).toEqual()
+    expect (reusablePerson.lifeExpectency).toEqual(79.89)
   });
 });
