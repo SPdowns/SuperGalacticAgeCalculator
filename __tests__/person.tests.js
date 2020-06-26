@@ -28,4 +28,9 @@ describe('Person class', () => {
     reusablePerson2.mercuryLifeExpectency();
     expect (reusablePerson2.lifeExpectency).toEqual(127);
   });
+
+  test("should convert earth age to venus age", () => {
+    reusablePerson.venusAge();
+    expect (reusablePerson.age).toEqual(29)
+  })
 });
