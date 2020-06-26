@@ -10,16 +10,24 @@ This is an application that determines a user’s age based on a planet’s sola
 This needs to take in a persons age in earth years and convert it to a corresponding planet solar year. I'm thinking just enter in a name and age, and then have an output where all planets are listed in text and print the calculatedage and calculatedlifeexpectency.
 
 **Behavior 1**: This will create a person object with a name and date of birth
-  * Input: Name: Sean; DOB: 06/26/2001
-  * Output: Person1 = Name: Sean; DOB: 06/26/2001
+  * Input: Name: Sean; Age: 18
+  * Output: Person1 = Name: Sean; Age: 18
 
 **Behavior 2**: This wil calculate the age on mercury, A year is 88 days on mercury.
-  * Input: Name: Sean; DOB: 06/26/2001
-  * Output: Earth Age: 15; Mercury Age: 62
+  * Input: Name: Sean; Age: 18
+  * Output: Earth Age: 18; Mercury Age: 74.569
 
-**Behavior 3**: This wil calculate the life expectancy on mercury, Life expexctancy will be 80 for every person.
-  * Input: Name: Sean; DOB: 06/26/2001
-  * Output: Earth Age: 15; Mercury Age: 62; Life left on earth: 65 years; Life left on mercury; 18 years
+**Behavior 3**: This will round the age to nearest whole number.
+  * Input: the calculated age is 74.569
+  * Output: the math.round function will change planet age 75
+
+**Behavior 4**: Life expexctancy will be 80 for every person. This will calculate the life expectancy on mercury if age is less than expectency.
+  * Input: Name: Sean; Age: 18
+  * Output: Earth Age: 18; Rounded Mercury Age: 75; Life left on earth: 62 years; Life left on mercury; 5 years
+
+**Behavior 5**: This will calculate the life expectancy on mercury if age is more than expectency.
+  * Input: Name: Sean; Age: 50
+  * Output: The earth age is 50, the rounded mercury age 207. The life expectancy is 127 mercury years over 80 earth years
 
 ## Known Bugs
 * No known bugs.   
@@ -47,3 +55,7 @@ Open index.html in Chrome or preferred browser: open index.html
 
 ## License
 This software is licensed under the MIT license. Copyright (c) 2020 **_Sean Downs_**
+
+**Behavior**: 
+  * Input: 
+  * Output: 
