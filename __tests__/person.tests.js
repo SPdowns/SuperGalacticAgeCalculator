@@ -5,7 +5,7 @@ import {Person} from "./../src/person";
 describe('Person class', () => {
   beforeEach(() => {
     reusablePerson = new Person("Sean", 18);
-    reusablePerson2 = new Person("Old Sean", 75)
+    reusablePerson2 = new Person("Old Sean", 100)
   });
 
   test("should create a new person object", () => {
@@ -58,7 +58,7 @@ describe('Person class', () => {
   test("should return a mars life expectency if age is less than expectency", () => {
     reusablePerson.marsAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.lifeExpectency).toEqual()
+    expect (reusablePerson.lifeExpectency).toEqual(70)
   })
 
 });
