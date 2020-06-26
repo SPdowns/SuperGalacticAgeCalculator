@@ -79,4 +79,8 @@ describe('Person class', () => {
     reusablePerson.lifeExpectencyCalc();
     expect (reusablePerson.lifeExpectency).toEqual(79.39)
   });
+  test("should convert earth age to uranus", () => {
+    reusablePerson.uranusAge();
+    expect (reusablePerson.age).toEqual(0.21)
+  });
 });
