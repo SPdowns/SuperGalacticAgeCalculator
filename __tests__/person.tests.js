@@ -9,4 +9,8 @@ describe('Person class', () => {
   test("should create a new person object", () => {
     expect (reusablePerson).toMatchObject({name: "Sean", age: 18})
   });
+
+  test("should convert earth age to mercury age", () => {
+    expect (reusablePerson.age).toEqual(75)
+  });
 });
