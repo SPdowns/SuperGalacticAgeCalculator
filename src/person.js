@@ -55,4 +55,9 @@ export class Person {
     let neptuneAge = this.days.toFixed(2);
     this.age = parseFloat(neptuneAge);
   }
+  plutoAge() {
+    this.days /= 90553;
+    let plutoAge = this.days.toFixed(2);
+    this.age = parseFloat(plutoAge);
+  }
 }

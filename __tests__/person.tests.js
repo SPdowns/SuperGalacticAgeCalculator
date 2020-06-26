@@ -98,7 +98,7 @@ describe('Person class', () => {
     expect (reusablePerson.lifeExpectency).toEqual(79.89)
   });
   test("should convert earth age to pluto", () => {
-    reusablePerson.neptuneAge();
+    reusablePerson.plutoAge();
     expect (reusablePerson.age).toEqual(0.07)
   });
 });
