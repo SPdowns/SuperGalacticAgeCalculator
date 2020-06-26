@@ -72,6 +72,6 @@ describe('Person class', () => {
   })
   test(" should convert earth age to saturn age", () => {
     reusablePerson.saturnAge();
-    expect (reusablePerson.age).toEqual()
+    expect (reusablePerson.age).toEqual(0.61)
   })
 });
