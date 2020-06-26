@@ -1,7 +1,10 @@
 import {Person} from "./../src/person";
 
 describe('Person class', () => {
-  test("should create a new person object", () => {
-    const person1 = new Person(Sean, 18)
+  beforeEach(() => {
+    reusablePerson = new Person("Sean", 18);
   });
-});
+
+  test("should create a new person object", () => {
+    expect (reusablePerson).toMatchObject({name: "Sean", age: 18})
+  });
