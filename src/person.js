@@ -45,4 +45,9 @@ export class Person {
     let saturnAge = this.days.toFixed(2);
     this.age = parseFloat(saturnAge);
   }
+  uranusAge() {
+    this.days /= 30687;
+    let uranusAge = this.days.toFixed(2);
+    this.age = parseFloat(uranusAge);
+  }
 }
