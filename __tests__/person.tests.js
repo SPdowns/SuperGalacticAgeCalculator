@@ -83,4 +83,9 @@ describe('Person class', () => {
     reusablePerson.uranusAge();
     expect (reusablePerson.age).toEqual(0.21)
   });
+  test("should return a uranus life expectency", () => {
+    reusablePerson.uranusAge();
+    reusablePerson.lifeExpectencyCalc();
+    expect (reusablePerson.lifeExpectency).toEqual()
+  });
 });
