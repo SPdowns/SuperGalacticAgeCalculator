@@ -7,23 +7,23 @@ export class Person {
     this.lifeExpectency = 80
   }
 
+  lifeExpectencyCalc() {
+    if (this.age < this.lifeExpectency) {
+      this.lifeExpectency -= this.age;
+      return this.lifeExpectency
+    } else {
+      let tempLifeExpectency = this.age -= this.lifeExpectency;
+      this.lifeExpectency = tempLifeExpectency;
+      return this.lifeExpectency
+    }
+  }
+
   mercuryAge() {
     this.age *= 365;
     this.age /= 88;
     let mercuryAge = Math.round(this.age)
     this.age = mercuryAge;
     return this.age
-  }
-
-  mercuryLifeExpectency() {
-    if (this.age < this.lifeExpectency) {
-      this.lifeExpectency -= this.age;
-      return this.lifeExpectency
-    } else {
-      let mercuryLifeExpectency = this.age -= this.lifeExpectency;
-      this.lifeExpectency = mercuryLifeExpectency;
-      return this.lifeExpectency
-    }
   }
 
   venusAge() {
