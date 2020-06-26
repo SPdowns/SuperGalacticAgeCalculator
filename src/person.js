@@ -3,7 +3,8 @@
 export class Person {
   constructor(name, age) {
     this.name = name;
-    this.age = age
+    this.age = age;
+    this.lifeExpectency = 80
   }
 
   mercuryAge() {
