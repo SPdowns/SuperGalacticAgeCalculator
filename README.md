@@ -44,7 +44,9 @@ Open via Bash/GitBash:
 3. Run npm install to setup specific project dependencies:
 `% npm install`
 4. Run npm run build to compile into a dist folder
+`% npm run build`
 5. Run npm run start to host test server
+`% npm run start`
 
 ## Technologies Used
 * Visual Studio Code (code editor)
