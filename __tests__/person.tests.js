@@ -46,9 +46,13 @@ describe('Person class', () => {
 
   test("should return a venus life expectency if age is more than expectency", () => {
     reusablePerson2.venusAge();
-    console.log(reusablePerson2)
     reusablePerson2.lifeExpectencyCalc();
     expect (reusablePerson2.lifeExpectency).toEqual(42)
+  })
+
+  test("should convert earth age to venus age", () => {
+    reusablePerson.marsAge();
+    expect (reusablePerson.age).toEqual(10)
   })
 
 
