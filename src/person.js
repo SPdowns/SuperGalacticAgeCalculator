@@ -9,6 +9,7 @@ export class Person {
   }
 
   lifeExpectencyCalc() {
+    console.log(this.age, this.lifeExpectency)
     if (this.age < this.lifeExpectency) {
       this.lifeExpectency -= this.age;
     } else {
@@ -19,19 +20,20 @@ export class Person {
 
   mercuryAge() {
     this.days /= 88;
-    let mercuryAge = Math.round(this.days)
-    this.age = mercuryAge;
+    console.log(this.days)
+    let mercuryAge = this.days.toFixed(2)
+    this.age = parseFloat(mercuryAge);
   }
 
   venusAge() {
     this.days /= 225;
-    let venusAge = Math.round(this.days)
-    this.age = venusAge;
+    let venusAge = this.days.toFixed(2)
+    this.age = parseFloat(venusAge);
   }
 
   marsAge() {
     this.days /= 687;
-    let marsAge = Math.round(this.days)
-    this.age = marsAge;
+    let marsAge = this.days.toFixed(2)
+    this.age = parseFloat(marsAge);
   }
 }
