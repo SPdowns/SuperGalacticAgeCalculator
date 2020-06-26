@@ -101,4 +101,9 @@ describe('Person class', () => {
     reusablePerson.plutoAge();
     expect (reusablePerson.age).toEqual(0.07)
   });
+  test("should return a pluto life expectency", () => {
+    reusablePerson.plutoAge();
+    reusablePerson.lifeExpectencyCalc();
+    expect (reusablePerson.lifeExpectency).toEqual()
+  });
 });
