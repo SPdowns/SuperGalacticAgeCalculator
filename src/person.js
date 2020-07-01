@@ -82,7 +82,10 @@ export class Person {
   }
   plutoAge() {
     this.days /= 90553;
+    this.lifeExpectency /= 90553
     let plutoAge = this.days.toFixed(2);
     this.age = parseFloat(plutoAge);
+    let plutoLifeExpexctency = this.lifeExpectency.toFixed(2)
+    this.spaceAgeLifeExpectency = parseFloat(plutoLifeExpexctency);
   }
 }
