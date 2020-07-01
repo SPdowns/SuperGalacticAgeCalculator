@@ -50,8 +50,11 @@ export class Person {
   }
   jupiterAge() {
     this.days /= 4333;
+    this.lifeExpectency /= 4333;
     let marsAge = this.days.toFixed(2);
     this.age = parseFloat(marsAge);
+    let jupiterLifeExpexctency = this.lifeExpectency.toFixed(2)
+    this.spaceAgeLifeExpectency = parseFloat(jupiterLifeExpexctency);
   }
   saturnAge() {
     this.days /= 10756;

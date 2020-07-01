@@ -92,20 +92,36 @@ describe('Person class', () => {
     reusablePerson.jupiterAge();
     expect (reusablePerson.age).toEqual(1.52)
   })
-  test("should return a jupiter life expectency if age is less than expectency", () => {
+
+  test("should return a jupiter life expectency value", () => {
     reusablePerson.jupiterAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.lifeExpectency).toEqual(78.48)
+    expect (reusablePerson.spaceAgeLifeExpectency).toEqual()
   })
+
+  test("should return a jupiter life expectency left if age is less than expectency", () => {
+    reusablePerson.jupiterAge();
+    reusablePerson.lifeExpectencyCalc();
+    expect (reusablePerson.lifeExpectency).toEqual()
+  });
+
+  test("should return a jupiter life expectency left if age is more than expectency", () => {
+    reusablePerson2.jupiterAge();
+    reusablePerson2.lifeExpectencyCalc();
+    expect (reusablePerson2.lifeExpectency).toEqual()
+  });
+
   test("should convert earth age to saturn age", () => {
     reusablePerson.saturnAge();
     expect (reusablePerson.age).toEqual(0.61);
-  })
+  });
+
   test("should return a saturn life expectency", () => {
     reusablePerson.saturnAge();
     reusablePerson.lifeExpectencyCalc();
     expect (reusablePerson.lifeExpectency).toEqual(79.39)
   });
+  
   test("should convert earth age to uranus", () => {
     reusablePerson.uranusAge();
     expect (reusablePerson.age).toEqual(0.21)
