@@ -33,7 +33,7 @@ export class Person {
 
   venusAge() {
     this.days /= 225;
-    this.lifeExpectency /=88;
+    this.lifeExpectency /= 225;
     let venusAge = this.days.toFixed(2);
     this.age = parseFloat(venusAge);
     let venusLifeExpexctency = this.lifeExpectency.toFixed(2)

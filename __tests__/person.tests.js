@@ -48,11 +48,17 @@ describe('Person class', () => {
     expect (reusablePerson.age).toEqual(29.2)
   })
 
-  test("should return a venus life expectency if age is less than expectency", () => {
+  test("should return a venus life expectency value", () => {
     reusablePerson.venusAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.lifeExpectency).toEqual(50.8)
+    expect (reusablePerson.spaceAgeLifeExpectency).toEqual()
   })
+
+  test("should return a venus life expectency if age is more than expectency", () => {
+    reusablePerson.venusAge();
+    reusablePerson.lifeExpectencyCalc();
+    expect (reusablePerson.lifeExpectency).toEqual()
+  });
 
   test("should return a venus life expectency if age is more than expectency", () => {
     reusablePerson2.venusAge();
