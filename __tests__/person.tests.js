@@ -16,7 +16,7 @@ describe('Person class', () => {
     expect(reusablePerson.days).toEqual(6570)
   })
 
-  test("should convert this.age to the amout of days", () => {
+  test("should convert this.age to the amount of days for old person", () => {
     expect(reusablePerson2.days).toEqual(27375)
   })
 
@@ -187,17 +187,18 @@ describe('Person class', () => {
   test("should return a pluto life expectency value", () => {
     reusablePerson.plutoAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.spaceAgeLifeExpectency).toEqual()
+    expect (reusablePerson.spaceAgeLifeExpectency).toEqual(0.32)
   })
 
   test("should return a pluto life expectency left if age is less than expectency", () => {
     reusablePerson.plutoAge();
     reusablePerson.lifeExpectencyCalc();
-    expect (reusablePerson.lifeExpectency).toEqual()
+    expect (reusablePerson.lifeExpectency).toEqual(0.25)
   });
+
   test("should return a pluto life expectency left if age is more than expectency", () => {
     reusablePerson2.plutoAge();
     reusablePerson2.lifeExpectencyCalc();
-    expect (reusablePerson2.lifeExpectency).toEqual()
+    expect (reusablePerson2.lifeExpectency).toEqual(0.02)
   });
 });

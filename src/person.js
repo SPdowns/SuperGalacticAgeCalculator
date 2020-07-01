@@ -12,11 +12,11 @@ export class Person {
   lifeExpectencyCalc() {
     if (this.age < this.lifeExpectency) {
       this.lifeExpectency -= this.age;
-      let x = this.lifeExpectency.toFixed(2)
-      this.lifeExpectency = parseFloat(x)
+      let x = this.lifeExpectency.toFixed(2);
+      this.lifeExpectency = parseFloat(x);
     } else {
       let x = this.age -= this.lifeExpectency;
-      let y = x.toFixed(2)
+      let y = x.toFixed(2);
       this.lifeExpectency = parseFloat(y);
     }
   }
@@ -26,18 +26,17 @@ export class Person {
     this.lifeExpectency /=88;
     let mercuryAge = this.days.toFixed(2);
     this.age = parseFloat(mercuryAge);
-    let mercuryLifeExpexctency = this.lifeExpectency.toFixed(2)
-    this.spaceAgeLifeExpectency = parseFloat(mercuryLifeExpexctency)
+    let mercuryLifeExpexctency = this.lifeExpectency.toFixed(2);
+    this.spaceAgeLifeExpectency = parseFloat(mercuryLifeExpexctency);
   }
-  //331.82
 
   venusAge() {
     this.days /= 225;
     this.lifeExpectency /= 225;
     let venusAge = this.days.toFixed(2);
     this.age = parseFloat(venusAge);
-    let venusLifeExpexctency = this.lifeExpectency.toFixed(2)
-    this.spaceAgeLifeExpectency = parseFloat(venusLifeExpexctency)
+    let venusLifeExpexctency = this.lifeExpectency.toFixed(2);
+    this.spaceAgeLifeExpectency = parseFloat(venusLifeExpexctency);
   }
 
   marsAge() {
