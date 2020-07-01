@@ -1,91 +1,91 @@
 // this is where the person constructor will go
 
 export class Person {
-  constructor(name, age, spaceAge, spaceAgeLifeExpectency) {
+  constructor(name, age, spaceAge, spaceAgeLifeExpectancy) {
     this.name = name;
     this.age = age;
     this.spaceAge = spaceAge;
-    this.spaceAgeLifeExpectency = spaceAgeLifeExpectency;
+    this.spaceAgeLifeExpectancy = spaceAgeLifeExpectancy;
     this.days = this.age*365;
-    this.lifeExpectency = 29200;
+    this.lifeExpectancy = 29200;
   }
 
   lifeExpectencyCalc() {
-    if (this.age < this.lifeExpectency) {
-      this.lifeExpectency -= this.age;
-      let x = this.lifeExpectency.toFixed(2);
-      this.lifeExpectency = parseFloat(x);
+    if (this.spaceAge < this.lifeExpectancy) {
+      this.lifeExpectancy -= this.spaceAge;
+      let x = this.lifeExpectancy.toFixed(2);
+      this.lifeExpectancy = parseFloat(x);
     } else {
-      let x = this.age -= this.lifeExpectency;
+      let x = this.spaceAge -= this.lifeExpectancy;
       let y = x.toFixed(2);
-      this.lifeExpectency = parseFloat(y);
+      this.lifeExpectancy = parseFloat(y);
     }
   }
 
   mercuryAge() {
     this.days /= 88;
-    this.lifeExpectency /=88;
+    this.lifeExpectancy /=88;
     let mercuryAge = this.days.toFixed(2);
     this.spaceAge = parseFloat(mercuryAge);
-    let mercuryLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(mercuryLifeExpexctency);
+    let mercuryLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(mercuryLifeExpexctency);
   }
 
   venusAge() {
     this.days /= 225;
-    this.lifeExpectency /= 225;
+    this.lifeExpectancy /= 225;
     let venusAge = this.days.toFixed(2);
-    this.age = parseFloat(venusAge);
-    let venusLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(venusLifeExpexctency);
+    this.spaceAge = parseFloat(venusAge);
+    let venusLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(venusLifeExpexctency);
   }
 
   marsAge() {
     this.days /= 687;
-    this.lifeExpectency /= 687;
+    this.lifeExpectancy /= 687;
     let marsAge = this.days.toFixed(2);
-    this.age = parseFloat(marsAge);
-    let marsLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(marsLifeExpexctency);
+    this.spaceAge = parseFloat(marsAge);
+    let marsLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(marsLifeExpexctency);
   }
   jupiterAge() {
     this.days /= 4333;
-    this.lifeExpectency /= 4333;
+    this.lifeExpectancy /= 4333;
     let marsAge = this.days.toFixed(2);
-    this.age = parseFloat(marsAge);
-    let jupiterLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(jupiterLifeExpexctency);
+    this.spaceAge = parseFloat(marsAge);
+    let jupiterLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(jupiterLifeExpexctency);
   }
   saturnAge() {
     this.days /= 10756;
-    this.lifeExpectency /= 10756;
+    this.lifeExpectancy /= 10756;
     let saturnAge = this.days.toFixed(2);
-    this.age = parseFloat(saturnAge);
-    let saturnLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(saturnLifeExpexctency);
+    this.spaceAge = parseFloat(saturnAge);
+    let saturnLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(saturnLifeExpexctency);
   }
   uranusAge() {
     this.days /= 30687;
-    this.lifeExpectency /= 30687;
+    this.lifeExpectancy /= 30687;
     let uranusAge = this.days.toFixed(2);
-    this.age = parseFloat(uranusAge);
-    let uranusLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(uranusLifeExpexctency);
+    this.spaceAge = parseFloat(uranusAge);
+    let uranusLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(uranusLifeExpexctency);
   }
   neptuneAge() {
     this.days /= 60190;
-    this.lifeExpectency /= 60109;
+    this.lifeExpectancy /= 60109;
     let neptuneAge = this.days.toFixed(2);
-    this.age = parseFloat(neptuneAge);
-    let uranusLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(uranusLifeExpexctency);
+    this.spaceAge = parseFloat(neptuneAge);
+    let uranusLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(uranusLifeExpexctency);
   }
   plutoAge() {
     this.days /= 90553;
-    this.lifeExpectency /= 90553;
+    this.lifeExpectancy /= 90553;
     let plutoAge = this.days.toFixed(2);
-    this.age = parseFloat(plutoAge);
-    let plutoLifeExpexctency = this.lifeExpectency.toFixed(2);
-    this.spaceAgeLifeExpectency = parseFloat(plutoLifeExpexctency);
+    this.spaceAge = parseFloat(plutoAge);
+    let plutoLifeExpexctency = this.lifeExpectancy.toFixed(2);
+    this.spaceAgeLifeExpectancy = parseFloat(plutoLifeExpexctency);
   }
 }
