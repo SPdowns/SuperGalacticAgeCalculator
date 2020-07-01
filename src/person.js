@@ -66,8 +66,11 @@ export class Person {
   }
   uranusAge() {
     this.days /= 30687;
+    this.lifeExpectency /= 30687;
     let uranusAge = this.days.toFixed(2);
     this.age = parseFloat(uranusAge);
+    let uranusLifeExpexctency = this.lifeExpectency.toFixed(2)
+    this.spaceAgeLifeExpectency = parseFloat(uranusLifeExpexctency);
   }
   neptuneAge() {
     this.days /= 60190;
