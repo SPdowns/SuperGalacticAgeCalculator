@@ -5,13 +5,18 @@ import './styles.css';
 import { Person } from './person';
 
 $(document).ready(function () {
-  $("#submit-calc").submit(function() {
+  $("#input").submit(function(event) {
     event.preventDefault();
-    let person = new Person();
+    let name = $("#input-name").val();
+    let age = $("#input-age").val();
+    let spaceAge;
     
-    $("#output-name").text(person.name)
-    $("#output-age").text(person.age)
+    let person = new Person(name, age, spaceAge);
+    person.mercuryAge();
+    
 
-    console.log(person);
-  })
+    $("#output-name").text(person.name);
+    $("#output-age").text(person.age);
+    $("#output-spaceage").text(person.spaceAge);
+  });
 });
