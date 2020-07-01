@@ -1,12 +1,12 @@
 // this is where the person constructor will go
 
 export class Person {
-  constructor(name, age, spaceLifeExpectency) {
+  constructor(name, age, spaceAgeLifeExpectency) {
     this.name = name;
     this.age = age;
+    this.spaceAgeLifeExpectency = spaceAgeLifeExpectency;
     this.days = this.age*365;
-    this.lifeExpectency = 80;
-    this.spaceLifeExpectency = spaceLifeExpectency
+    this.lifeExpectency = 29200;
   }
 
   lifeExpectencyCalc() {
@@ -23,15 +23,21 @@ export class Person {
 
   mercuryAge() {
     this.days /= 88;
+    this.lifeExpectency /=88;
     let mercuryAge = this.days.toFixed(2);
     this.age = parseFloat(mercuryAge);
+    let mercuryLifeExpexctency = this.lifeExpectency.toFixed(2)
+    this.spaceAgeLifeExpectency = parseFloat(mercuryLifeExpexctency)
   }
   //331.82
 
   venusAge() {
     this.days /= 225;
+    this.lifeExpectency /=88;
     let venusAge = this.days.toFixed(2);
     this.age = parseFloat(venusAge);
+    let venusLifeExpexctency = this.lifeExpectency.toFixed(2)
+    this.spaceAgeLifeExpectency = parseFloat(venusLifeExpexctency)
   }
 
   marsAge() {
