@@ -46,7 +46,7 @@ $(document).ready(function () {
       person.plutoAge();
       person.lifeExpectancyCalc();
       break;
-      default:
+        default:
       person.mercuryAge();
       person.lifeExpectancyCalc();
     }
@@ -55,7 +55,7 @@ $(document).ready(function () {
     $("#output-age").text(person.age);
     $("#output-spaceage").text(person.spaceAge);
     $("#output-planet-name").text(planetSelector);
-    $("#output-life-expectancy").text(person.lifeExpectancy)
-    $("#output-space-life-expectancy").text(person.spaceAgeLifeExpectancy)
+    $("#output-life-expectancy").text(person.lifeExpectancy);
+    $("#output-space-life-expectancy").text(person.spaceAgeLifeExpectancy);
   });
 });
