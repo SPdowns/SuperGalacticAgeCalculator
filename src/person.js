@@ -7,7 +7,7 @@ export class Person {
     this.spaceAge = spaceAge;
     this.spaceAgeLifeExpectancy = spaceAgeLifeExpectancy;
     this.days = this.age*365;
-    this.lifeExpectancy = 29200;
+    this.lifeExpectancy = 36500;
   }
 
   lifeExpectancyCalc() {

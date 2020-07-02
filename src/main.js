@@ -39,14 +39,14 @@ $(document).ready(function () {
       person.lifeExpectancyCalc();
       break;
     case ("Neptune"):
-      person.neptuneAge
+      person.neptuneAge;
       person.lifeExpectancyCalc();
       break;
     case ("Pluto"):
       person.plutoAge();
       person.lifeExpectancyCalc();
       break;
-        default:
+    default:
       person.mercuryAge();
       person.lifeExpectancyCalc();
     }
