@@ -17,7 +17,7 @@
         <label for="input-name">Name: </label>
         <input type="text" class="label-input" id="input-name">
         <label for="input-age">Age: </label>
-        <input type="number" class="label-input" id="input-age">
+        <input type="number" min="1" max="99" class="label-input" id="input-age">
         <label for="input-planets">Choose Planet: </label>
         <input list="input-planets" name="input-planet" type="text" id="input-planet">
           <datalist id="input-planets">
@@ -34,7 +34,7 @@
       </form>
       </section>
       <section id="output-dom" class="output-section">
-        <p>Hello <span id="output-name"></span>,<br> We here at the Center For Planetary Age have done the calculations. <br>According to our data, if your Earth age is <span id="output-age"></span>, that means your <span id="output-planet-name"></span> age is <span id="output-spaceage"></span>. <br>The normal life expectancy on <span id="output-planet-name"></span> is <span id="output-space-life-expectancy"></span>. <br>That means you have <span id="output-life-expectancy"></span> years left to live.</p>
+        <p>Hello </em><span id="output-name" class="output-text"></span>,<br> We here at the Center For Planetary Age have done the calculations. <br>According to our data:<br>Your<span class="output-text">Earth</span> age is: <span id="output-age" class="output-text"></span><br> Your <span id="output-planet-name" class="output-text"></span> age is <span id="output-spaceage" class="output-text"></span>. <br>The normal life expectancy on <span id="output-planet-name" class="output-text"></span> is <span id="output-space-life-expectancy" class="output-text"></span>. <br>That means you have <span id="output-life-expectancy" class="output-text"></span> years left to live.</p>
       </section>
     </div>
   </body>

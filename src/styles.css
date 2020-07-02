@@ -29,6 +29,10 @@ label, p, button{
   text-align: center;
 }
 
+.output-text {
+  color: rgb(185, 12, 0);
+}
+
 .form-section {
   display: flex;
   text-align: center;
