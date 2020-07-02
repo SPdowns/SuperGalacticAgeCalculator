@@ -1,7 +1,7 @@
 // this is where the person constructor will go
 
 export class Person {
-  constructor(name, age, spaceAge, spaceAgeLifeExpectancy) {
+  constructor(name, age, spaceAgeLifeExpectancy, spaceAge) {
     this.name = name;
     this.age = age;
     this.spaceAge = spaceAge;
@@ -10,7 +10,7 @@ export class Person {
     this.lifeExpectancy = 29200;
   }
 
-  lifeExpectencyCalc() {
+  lifeExpectancyCalc() {
     if (this.spaceAge < this.lifeExpectancy) {
       this.lifeExpectancy -= this.spaceAge;
       let x = this.lifeExpectancy.toFixed(2);

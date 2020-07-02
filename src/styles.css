@@ -1,0 +1,12 @@
+#output-dom {
+  display: none;
+  text-align: center;
+}
+
+
+
+.form-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}

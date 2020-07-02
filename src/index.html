@@ -11,16 +11,30 @@
       <div class="jumbotron">
         <h1>Super Calc</h1>
       </div>
-      <p>This is what you do</p>
+      <section id="outer-form" class="form-section">
+      <p>Enter your information. Submit For Results</p>
       <form action="" class="inputs" id="input">
         <label for="input-name">Name: </label>
-        <input type="text" class="form-control" id="input-name">
+        <input type="text" class="label-input" id="input-name">
         <label for="input-age">Age: </label>
-        <input type="number" class="form-control" id="input-age">
+        <input type="number" class="label-input" id="input-age">
+        <label for="input-planets">Choose Planet: </label>
+        <input list="input-planets" name="input-planet" type="text" id="input-planet">
+          <datalist id="input-planets">
+            <option value="Mercury"></option>
+            <option value="Venus"></option>
+            <option value="Mars"></option>
+            <option value="Jupiter"></option>
+            <option value="Saturn"></option>
+            <option value="Uranus"></option>
+            <option value="Neptune"></option>
+            <option value="Pluto"></option>
+          </datalist>
         <button type="submit" id="submit-calc">Submit Here</button>
       </form>
-      <section class="output">
-        <p>Hello <span id="output-name"></span>, your age is <span id="output-age"></span> <br> your space age is <span id="output-spaceage"></span></p>
+      </section>
+      <section id="output-dom" class="output-section">
+        <p>Hello <span id="output-name"></span>,<br> We here at the Center For Planetary Age have done the calculations. <br>According to our data, if your Earth age is <span id="output-age"></span>, that means your <span id="output-planet-name"></span> age is <span id="output-spaceage"></span>. <br>The normal life expectancy on <span id="output-planet-name"></span> is <span id="output-space-life-expectancy"></span>. <br>That means you have <span id="output-life-expectancy"></span> years left to live.</p>
       </section>
     </div>
   </body>
